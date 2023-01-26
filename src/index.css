@@ -30,3 +30,58 @@ code {
   background: rgba(255, 255, 255, 0.3);
   padding: 44px 0px;
 }
+.container {
+  display: flex;
+  min-width: 950px;
+  height: 100vh;
+}
+.ant-layout {
+  overflow-x: hidden;
+}
+.ant-layout-content {
+  box-sizing: border-box;
+  flex: 1;
+  padding: 10px 12px;
+  overflow-x: hidden;
+}
+.ant-layout-sider {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-top: 1px solid #e4e7ed;
+  background-color: #fff;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #858585;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddee0;
+  border-radius: 20px;
+  box-shadow: inset 0 0 #fff;
+}
+
+.ant-card .ant-card-cover > * {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 27px;
+}

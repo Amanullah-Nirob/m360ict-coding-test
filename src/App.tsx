@@ -3,9 +3,11 @@ import LayoutIndex from "./layouts";
 
 function App() {
   return (
-    <Routes>
-      <Route index element={<LayoutIndex />} />
-    </Routes>
+    <div className="container">
+      <Routes>
+        <Route index element={<LayoutIndex />} />
+      </Routes>
+    </div>
   );
 }
 
