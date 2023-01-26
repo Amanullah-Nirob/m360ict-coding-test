@@ -11,6 +11,7 @@ function LayoutMainContent() {
   const [launchesData, setLaunchesData] = useState([]);
   const [searchParams] = useSearchParams();
   const searchquery = searchParams.get("search");
+  const filterStatus = searchParams.get("status");
 
   // if search By Rocket Name
   useEffect(() => {
@@ -21,10 +22,17 @@ function LayoutMainContent() {
           .includes(searchquery.toLowerCase()),
       );
       setLaunchesData(filterData);
+    }
+    if (filterStatus) {
+      const filterData = launches?.filter(
+        (rocketData: any) =>
+          rocketData.launch_success === (filterStatus === "success"),
+      );
+      setLaunchesData(filterData);
     } else {
       setLaunchesData(launches);
     }
-  }, [searchquery, launches]);
+  }, [searchParams, launches]);
 
   return (
     <div className="main-content-box">

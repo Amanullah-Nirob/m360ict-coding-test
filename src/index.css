@@ -25,10 +25,10 @@ code {
 }
 
 .logo {
-  height: 32px;
+  height: 15px;
   margin: 16px;
   background: rgba(255, 255, 255, 0.3);
-  padding: 44px 0px;
+  padding: 23px 0px;
 }
 .container {
   display: flex;
@@ -84,4 +84,8 @@ code {
   width: 70%;
   margin: auto;
   margin-top: 27px;
+}
+
+.sideBar {
+  margin: 0px 16px;
 }
