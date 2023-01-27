@@ -103,7 +103,7 @@ function SingleLaunch() {
               </p>
               <p>
                 <span>Outcome: </span>{" "}
-                {launch.upcoming ? "Successful" : "Failed"}
+                {launch.launch_success ? "Successful" : "Failed"}
               </p>
             </div>
           </div>

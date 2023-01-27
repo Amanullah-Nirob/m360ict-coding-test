@@ -13,10 +13,11 @@ function SearchRocket() {
   };
   return (
     <Search
-      placeholder="Search By Rocket Name (e.g. Falcon 9, Falcon 1, potato)"
+      placeholder="Search By Rocket Name (e.g. Falcon 9, Falcon 1)"
       allowClear
       enterButton="Search"
       size="large"
+      style={{ width: "50%" }}
       name="search"
       value={searchParams.get("search") || ""}
       onChange={handleSearchChange}

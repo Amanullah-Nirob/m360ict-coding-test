@@ -25,10 +25,14 @@ code {
 }
 
 .logo {
-  height: 15px;
-  margin: 16px;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 23px 0px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 10px 8px 25px;
+}
+.logo p {
+  font-size: 23px;
+  margin-left: 8px;
 }
 .container {
   display: flex;
@@ -99,10 +103,10 @@ code {
 }
 .filter-radio {
   background-color: #000b16;
-  padding: 12px;
+  padding: 12px 22px;
 }
 .title {
-  margin: 15px 14px;
+  margin: 15px 23px;
   font-size: 15px;
 }
 .ant-space-item {
@@ -127,7 +131,7 @@ code {
 }
 .mission_name {
   font-size: 35px;
-  color: #ef233c;
+  color: #00a8ff;
   width: 100%;
   display: block;
   border-bottom: 1px solid #7c7c7c;
@@ -207,7 +211,7 @@ p.details {
 }
 .media_link a span {
   margin-right: 9px;
-  color: red;
+  color: #00a8ff;
 }
 .social-button-group {
   display: flex;
@@ -232,4 +236,30 @@ p.details {
 .info p span {
   font-weight: 600;
   margin-right: 3px;
+}
+.clear-filter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.avater {
+  margin: 0px 33px 0 25px;
+  display: flex;
+  align-items: center;
+}
+.avater p {
+  margin-right: 20px;
+  font-size: 16px;
+}
+.header-other {
+  display: flex;
+}
+.full-screen {
+  margin-left: 20px;
+}
+.full-screen span {
+  font-size: 20px;
+}
+.ant-card-meta {
+  margin-bottom: 2px !important;
 }

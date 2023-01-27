@@ -47,16 +47,10 @@ const filterLaunchData = (
   }
 
   if (upcomingPastQuery) {
-    if (upcomingPastQuery === "upcoming") {
-      console.log(upcomingPastQuery);
-      filteredData = launches?.filter(
-        (rocketData: any) => rocketData.upcoming === true,
-      );
-    } else {
-      filteredData = launches?.filter(
-        (rocketData: any) => rocketData.upcoming === false,
-      );
-    }
+    filteredData = launches?.filter(
+      (rocketData: any) =>
+        rocketData.upcoming === (upcomingPastQuery === "upcoming"),
+    );
   }
   return filteredData;
 };

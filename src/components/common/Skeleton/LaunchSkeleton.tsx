@@ -1,16 +1,20 @@
-import { Col, Row, Skeleton } from "antd";
+import { Card, List, Skeleton } from "antd";
 
 function LaunchSkeleton() {
-  const roomsSkeletonArray = Array(50);
+  const data = new Array(50).fill({});
   return (
     <div>
-      <Row gutter={[16, 16]}>
-        {roomsSkeletonArray.map((number) => (
-          <Col lg={4} key={number}>
-            <Skeleton.Button active size="default" shape="default" block />
-          </Col>
-        ))}
-      </Row>
+      <List
+        grid={{ gutter: 1, xs: 1, sm: 2, md: 4, lg: 4, xl: 4, xxl: 4 }}
+        dataSource={data}
+        renderItem={() => (
+          <List.Item>
+            <Card>
+              <Skeleton active />
+            </Card>
+          </List.Item>
+        )}
+      />
     </div>
   );
 }

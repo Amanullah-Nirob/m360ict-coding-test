@@ -5,7 +5,7 @@ import { formatDate, getDateFormat } from "../../utils/formateDate";
 const { Meta } = Card;
 function LaunchDataCard({ launch }: any) {
   return (
-    <Col lg={4}>
+    <Col xxl={4} lg={6}>
       <Link to={`/singleLaunch/${launch.flight_number}`}>
         <Card
           hoverable
@@ -20,7 +20,7 @@ function LaunchDataCard({ launch }: any) {
           <Meta
             title={`${launch.mission_name} - ${launch.rocket.rocket_name}`}
           />
-          <div>
+          <div className="launchDate">
             {`Date of launch: ${formatDate(
               new Date(launch.launch_date_unix * 1000),
               getDateFormat(launch.tentative_max_precision, {

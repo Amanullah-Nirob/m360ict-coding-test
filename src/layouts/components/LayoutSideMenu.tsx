@@ -1,5 +1,5 @@
-import { Space } from "antd";
-import { useSearchParams } from "react-router-dom";
+import { Button, Space } from "antd";
+import { Link, useSearchParams } from "react-router-dom";
 import FilterBox from "../../components/sideMenu/filterData/FilterBox";
 import RadioBox from "../../components/sideMenu/filterData/RadioBox";
 
@@ -8,7 +8,10 @@ function LayoutSideMenu() {
 
   return (
     <div className="sideBar">
-      <div className="logo" />
+      <Link className="logo" to="/">
+        <img src="/img/fav.png" alt="" />
+        <p>AmanSpaceX</p>
+      </Link>
       <div className="menu-content" style={{ color: "#fff" }}>
         <div className="filter-box">
           <div className="title">Status</div>
@@ -50,6 +53,11 @@ function LayoutSideMenu() {
             </FilterBox>
           </div>
         </div>
+      </div>
+      <div className="clear-filter">
+        <Button type="primary" style={{ width: "100%" }}>
+          <Link to="/">Clear filter</Link>
+        </Button>
       </div>
     </div>
   );
