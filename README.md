@@ -6,7 +6,7 @@
 
 ### Demo 👀
 
-- Link：https://hooks.spicyboy.cn
+- Link：https://m360ict-coding-test.vercel.app
 
 ### Installation steps 📑
 
