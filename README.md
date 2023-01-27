@@ -32,6 +32,12 @@ or
 yarn start
 ```
 
+- **Build for production**
+
+```text
+npm run build
+```
+
 ### File resource directory 📚
 
 ```text
