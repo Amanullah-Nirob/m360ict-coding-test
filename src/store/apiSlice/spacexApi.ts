@@ -14,7 +14,11 @@ export const spacexApi = createApi({
       query: () => "/",
       providesTags: ["Launches"],
     }),
+    singleLaunch: builder.query<[], any>({
+      query: (id) => `/${id}`,
+      providesTags: ["Launches"],
+    }),
   }),
 });
 
-export const { useLaunchesQuery } = spacexApi;
+export const { useLaunchesQuery, useSingleLaunchQuery } = spacexApi;

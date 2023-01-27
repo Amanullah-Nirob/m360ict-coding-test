@@ -1,10 +1,10 @@
 import { Layout, theme } from "antd";
+import { Outlet } from "react-router-dom";
 import "../index.css";
 import { useAppSelector } from "../store/hooks";
 import { selectCollapse } from "../store/slice/collapsMenuSlice";
 import LayoutFooter from "./components/LayoutFooter";
 import LayoutHeader from "./components/LayoutHeader";
-import LayoutMainContent from "./components/LayoutMainContent";
 import LayoutSideMenu from "./components/LayoutSideMenu";
 
 const { Sider, Content } = Layout;
@@ -33,7 +33,7 @@ function LayoutIndex() {
             background: colorBgContainer,
           }}
         >
-          <LayoutMainContent />
+          <Outlet />
         </Content>
         <LayoutFooter />
       </Layout>

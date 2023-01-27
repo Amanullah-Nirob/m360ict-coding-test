@@ -10,12 +10,21 @@ interface Props {
 }
 function FilterBox({ value, children, searchName }: Props) {
   const [, setSearchParams] = useSearchParams();
+
   const handleChangeFilter = (e: RadioChangeEvent) => {
+    // setSearchParams({
+    //   ...Object.fromEntries([...searchParams]),
+    //   [searchName]: e.target.value,
+    // });
     setSearchParams({ [searchName]: e.target.value });
   };
   return (
     <div>
-      <Radio.Group onChange={handleChangeFilter} value={value}>
+      <Radio.Group
+        onChange={handleChangeFilter}
+        value={value}
+        buttonStyle="solid"
+      >
         {children}
       </Radio.Group>
     </div>

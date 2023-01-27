@@ -1,12 +1,12 @@
 import { Col, Row, Skeleton } from "antd";
 
 function LaunchSkeleton() {
-  const roomsSkeletonArray = Array(50).fill("");
+  const roomsSkeletonArray = Array(50);
   return (
     <div>
       <Row gutter={[16, 16]}>
-        {roomsSkeletonArray.map(() => (
-          <Col lg={4}>
+        {roomsSkeletonArray.map((number) => (
+          <Col lg={4} key={number}>
             <Skeleton.Button active size="default" shape="default" block />
           </Col>
         ))}

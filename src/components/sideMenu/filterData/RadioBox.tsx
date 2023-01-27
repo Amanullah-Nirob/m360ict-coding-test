@@ -7,7 +7,7 @@ interface Props {
 function RadioBox({ value, title }: Props) {
   return (
     <Radio value={value}>
-      <span style={{ color: "green" }}>{title}</span>
+      <span style={{ color: "rgb(223 223 223)" }}>{title}</span>
     </Radio>
   );
 }

@@ -86,6 +86,150 @@ code {
   margin-top: 27px;
 }
 
-.sideBar {
+/* .sideBar {
   margin: 0px 16px;
+} */
+
+.ant-radio .ant-radio-inner {
+  border-radius: 30% !important;
+}
+
+.status_filter {
+  margin: 0px 15px;
+}
+.filter-radio {
+  background-color: #000b16;
+  padding: 12px;
+}
+.title {
+  margin: 15px 14px;
+  font-size: 15px;
+}
+.ant-space-item {
+  margin-bottom: 7px;
+}
+
+/* .singleLaunchMain  */
+.launchHeader {
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #1f2937 150%),
+    url("../public/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 34vh;
+  position: relative;
+}
+
+.header-content {
+  text-align: center;
+  transform: translate(0px, 18vh);
+  text-align: center;
+}
+.mission_name {
+  font-size: 35px;
+  color: #ef233c;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #7c7c7c;
+  padding-bottom: 15px;
+}
+.mission_name h1 {
+  margin: 0;
+}
+.launch-date-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.launch-date-status-main {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+}
+.launch-date-status {
+  background: #156c94;
+  border-radius: 33px;
+  border: 1px solid #156c94;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.launch-date-status span {
+  font-size: 19px;
+  color: #fff;
+  margin-right: 6px;
+}
+.launch-date-status p {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 1px;
+}
+.launch-date-status-main {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  margin: 0;
+}
+.launch-date-status.status {
+  background-color: #1f2832;
+  border: 0;
+}
+.description .title {
+  font-size: 22px;
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 9px;
+  margin: 16px 0;
+  color: #444343;
+}
+p.details {
+  width: 45%;
+  font-size: 15px;
+}
+@media screen and (max-width: 1300px) {
+  .header-content {
+    transform: translate(0px, 17vh);
+  }
+  .launch-date-status-main {
+    width: 34%;
+    margin: auto;
+    margin-top: 9px;
+  }
+}
+
+.media_link a {
+  font-size: 20px;
+}
+.media_link a span {
+  margin-right: 9px;
+  color: red;
+}
+.social-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 72%;
+  flex-wrap: wrap;
+  margin: 43px 14px;
+}
+.info h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-size: 19px;
+  color: #484545;
+  margin-bottom: 12px;
+}
+
+.info p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.info p span {
+  font-weight: 600;
+  margin-right: 3px;
 }
