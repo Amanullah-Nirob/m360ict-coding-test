@@ -5,6 +5,7 @@ import {
   StockOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
+import { Spin } from "antd";
 import { useParams } from "react-router-dom";
 import LaunchHeader from "../../components/singleLaunch/LaunchHeader";
 import MediaLink from "../../components/singleLaunch/MediaLink";
@@ -109,7 +110,9 @@ function SingleLaunch() {
           </div>
         </div>
       ) : (
-        ""
+        <div className="loading">
+          <Spin />
+        </div>
       )}
     </div>
   );
